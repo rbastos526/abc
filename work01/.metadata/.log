@@ -702,3 +702,81 @@ org.eclipse.core.runtime.OperationCanceledException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-07-18 15:52:06.293
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.core 4 0 2016-07-18 16:04:49.329
+!MESSAGE An exception occurred during push on URI git@github.com:rbastos526/projetoTeste.git: Nothing to push.
+!STACK 0
+org.eclipse.jgit.errors.TransportException: Nothing to push.
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1197)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.PushWizard$PushJob.run(PushWizard.java:297)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-07-18 16:04:49.338
+!MESSAGE Can't connect to any repository: git@github.com:rbastos526/projetoTeste.git (Nothing to push.)
+
+!ENTRY org.eclipse.egit.core 4 0 2016-07-18 16:05:20.418
+!MESSAGE An exception occurred during push on URI git@github.com:rbastos526/projetoTeste2.git: Nothing to push.
+!STACK 0
+org.eclipse.jgit.errors.TransportException: Nothing to push.
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1197)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.PushWizard$PushJob.run(PushWizard.java:297)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-07-18 16:05:20.426
+!MESSAGE Can't connect to any repository: git@github.com:rbastos526/projetoTeste2.git (Nothing to push.)
+
+!ENTRY org.eclipse.egit.core 4 0 2016-07-18 16:05:37.114
+!MESSAGE An exception occurred during push on URI git@github.com:rbastos526/projetoTeste.git: Nothing to push.
+!STACK 0
+org.eclipse.jgit.errors.TransportException: Nothing to push.
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1197)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.PushWizard$PushJob.run(PushWizard.java:297)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-07-18 16:05:37.122
+!MESSAGE Can't connect to any repository: git@github.com:rbastos526/projetoTeste.git (Nothing to push.)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-07-18 16:07:27.722
+!MESSAGE Transport Error: Cannot get remote repository refs.
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/rbastos526/: https://github.com/rbastos526/info/refs?service=git-upload-pack not found
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:223)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:159)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:99)
+	at org.eclipse.egit.ui.internal.components.RefSpecPage$3.run(RefSpecPage.java:254)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/rbastos526/: https://github.com/rbastos526/info/refs?service=git-upload-pack not found
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:482)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:296)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:202)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-07-18 16:08:26.628
+!MESSAGE Transport Error: Cannot get remote repository refs.
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/rbastos526/projetoTeste/tree/trunc: https://github.com/rbastos526/projetoTeste/tree/trunc/info/refs?service=git-upload-pack not found
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:223)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:159)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:99)
+	at org.eclipse.egit.ui.internal.components.RefSpecPage$3.run(RefSpecPage.java:254)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/rbastos526/projetoTeste/tree/trunc: https://github.com/rbastos526/projetoTeste/tree/trunc/info/refs?service=git-upload-pack not found
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:482)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:296)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:202)
+	... 4 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-07-18 16:11:53.881
+!MESSAGE An exception occurred during push on URI git@github.com:rbastos526/projetoTeste.git: Nothing to push.
+!STACK 0
+org.eclipse.jgit.errors.TransportException: Nothing to push.
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1197)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.PushWizard$PushJob.run(PushWizard.java:297)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-07-18 16:11:53.887
+!MESSAGE Can't connect to any repository: git@github.com:rbastos526/projetoTeste.git (Nothing to push.)
