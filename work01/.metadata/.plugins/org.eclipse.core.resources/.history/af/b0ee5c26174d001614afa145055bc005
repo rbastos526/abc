@@ -1,0 +1,24 @@
+package testes;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.control.CalculosAluno;
+
+public class TestesAluno {
+
+	@Test
+	public void testarCalculoMedia(){
+		double valor1 = 8.;
+		double valor2 = 6.;
+		double valorEsperado = 7.;
+		double resultado = 0.;
+		
+		resultado = new CalculosAluno().calcularMedia(valor1, valor2);
+		
+		Assert.assertEquals(valorEsperado, resultado);
+		
+	}
+	
+	
+}

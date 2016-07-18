@@ -1,0 +1,29 @@
+package com.model;
+
+public class Aluno {
+	
+	private Integer idAluno;
+	private String nome;
+	private Double nota1;
+	private Double nota2;
+	
+	public Aluno() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Aluno(Integer idAluno, String nome, Double nota1, Double nota2) {
+		super();
+		this.idAluno = idAluno;
+		this.nome = nome;
+		this.nota1 = nota1;
+		this.nota2 = nota2;
+	}
+
+	@Override
+	public String toString() {
+		return "Aluno [idAluno=" + idAluno + ", nome=" + nome + ", nota1=" + nota1 + ", nota2=" + nota2 + "]";
+	}
+	
+	
+
+}
